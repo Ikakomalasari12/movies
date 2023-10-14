@@ -10,10 +10,10 @@ from bs4 import BeautifulSoup
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
-MONGODB_URI = os.environ.get("mongodb+srv://test_ikakomalasari:sparta@test.nrkvr1l.mongodb.net/?retryWrites=true&w=majority")
+MONGODB_URI = os.environ.get("mongodb+srv://ezharya86:sparta@cluster0.vfirzon.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME =  os.environ.get("dbsparta")
 
-client = MongoClient('mongodb+srv://test_ikakomalasari:sparta@test.nrkvr1l.mongodb.net/?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://ezharya86:sparta@cluster0.vfirzon.mongodb.net/?retryWrites=true&w=majority')
 db = client.dbsparta
 
 app = Flask(__name__)
